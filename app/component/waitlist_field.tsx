@@ -65,7 +65,7 @@ export default function WaitlistComponent() {
         setModal({
           isOpen: true,
           type: 'info',
-          title: 'Welcome Back! 👋',
+          title: '',
           content: checkData.message
         });
         setLoading(false);
