@@ -138,16 +138,16 @@ export default function WaitlistComponent() {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.4 }}
-        className="md:w-[650px] w-[355px] bg-linear-to-r from-white/15 to-gray-400/15 backdrop-blur-md border border-white/20 rounded-[25px] px-[1.8rem] py-10 flex justify-center items-center flex-col gap-1 drop-shadow-[0_0_20px_rgba(255,255,255,0.7)]"
+        className="md:w-[650px] w-[350px] bg-linear-to-r from-white/15 to-gray-400/15 backdrop-blur-md border border-white/20 rounded-[25px] md:px-[1.8rem] px-[1.2rem] py-10 flex justify-center items-center flex-col gap-1 drop-shadow-[0_0_20px_rgba(255,255,255,0.7)]"
       >
-        <h1 className="text-white/80 text-[1.3rem] font-semibold font-orbitron">
+        <h1 className="text-white/80 text-center text-[1.3rem] font-semibold font-orbitron">
           Kingdom builders join the waitlist!
         </h1>
         <p className="text-center w-[95%] text-white/70 text-[0.8rem]">
           Be the first to experience the future of AI-powered ministry. Join the GOYE waitlist for exclusive early access, product updates, and launch announcements
         </p>
 
-        <form onSubmit={handleSubmit} className="flex items-center gap-2 justify-between mt-5 w-full">
+        <form onSubmit={handleSubmit} className="flex items-center gap-2 justify-between md:flex-row flex-col mt-5 w-full">
           <input
             type="email"
             value={email}
@@ -161,7 +161,7 @@ export default function WaitlistComponent() {
             disabled={loading}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="h-[40px] bg-white text-[0.8rem] text-slate-950 font-bold rounded-full drop-shadow-[0_0_20px_rgba(255,255,255,0.7)] w-[120px] font-orbitron disabled:opacity-50 disabled:cursor-not-allowed"
+            className="h-[40px] bg-white text-[0.8rem] text-slate-950 font-bold rounded-full drop-shadow-[0_0_20px_rgba(255,255,255,0.7)] md:w-[120px] w-full font-orbitron disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {loading ? 'Loading...' : 'Join waitlist'}
           </motion.button>
