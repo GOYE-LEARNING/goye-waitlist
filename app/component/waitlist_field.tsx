@@ -147,13 +147,13 @@ export default function WaitlistComponent() {
           Be the first to experience the future of AI-powered ministry. Join the GOYE waitlist for exclusive early access, product updates, and launch announcements
         </p>
 
-        <form onSubmit={handleSubmit} className="flex items-center gap-2 justify-between md:flex-row flex-col mt-5 w-full">
+        <form onSubmit={handleSubmit} className="flex items-center gap-2 justify-between md:flex-row flex-col mt-5 w-full h-full">
           <input
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Enter email"
-            className="drop-shadow-[0_0_20px_rgba(255,255,255,0.7)] border-none outline-none bg-black/30 h-[40px] px-5 text-white placeholder:text-white text-[0.8rem] rounded-full flex-1"
+            className="drop-shadow-[0_0_20px_rgba(255,255,255,0.7)] border-none outline-none bg-black/30 md:h-[40px] px-5 text-white placeholder:text-white text-[0.8rem] rounded-full flex-1 md-w-auto w-full py-3 md:py-0"
             required
           />
           <motion.button
