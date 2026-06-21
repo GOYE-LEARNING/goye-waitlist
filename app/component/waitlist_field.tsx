@@ -85,7 +85,7 @@ export default function WaitlistComponent() {
         setModal({
           isOpen: true,
           type: 'success',
-          title: "You're In! 🎉",
+          title: "",
           content: createData.message
         });
         setEmail('');
