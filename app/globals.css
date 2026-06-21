@@ -21,7 +21,7 @@ body {
 }
 
 .time_design h1 {
-  @apply font-orbitron h-[45px] w-[60px] rounded-[10px] bg-black/30 flex justify-center items-center text-[1.5rem]
+  @apply font-orbitron h-[45px] w-[60px] rounded-[10px] bg-black/30 flex justify-center items-center text-[1.5rem] border border-white/10
 }
 
 .time_design:not(:last-child)::after {

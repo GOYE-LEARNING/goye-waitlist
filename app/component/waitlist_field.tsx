@@ -129,7 +129,7 @@ export default function WaitlistComponent() {
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        className="bg-clip-text text-transparent bg-linear-to-r from-orange-500 via-white to-white/40 font-bold text-[5rem] text-center font-orbitron"
+        className="bg-clip-text text-transparent bg-linear-to-r from-orange-500 via-white to-white/40 font-bold md:text-[5rem] text-[3.7rem] text-center font-orbitron"
       >
         Coming soon!
       </motion.h1>
@@ -174,7 +174,7 @@ export default function WaitlistComponent() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 0.6 + index * 0.1 }}
-              className="w-[100px] time_design relative flex justify-center items-center flex-col gap-1"
+              className="w-[100px] time_design relative flex justify-center items-center flex-col gap-1 "
             >
               <h1 className="text-white font-semibold font-orbitron text-3xl">
                 {String(timeLeft[unit as keyof typeof timeLeft]).padStart(2, '0')}
