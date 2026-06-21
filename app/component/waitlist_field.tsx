@@ -115,7 +115,7 @@ export default function WaitlistComponent() {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center gap-5 md:px-0 px-[3rem]">
+    <div className="flex flex-col justify-center items-center gap-5">
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
